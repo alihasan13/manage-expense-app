@@ -1,6 +1,6 @@
-import ExpenseItem from "./components/ExpenseItem";
+import Expenses from "./components/Expenses/Expenses";
 
-function App() {
+const App = () => {
   const DUMMY_EXPENSES = [
     {
       id: "e1",
@@ -25,26 +25,7 @@ function App() {
   return (
     <div className="App">
       <h1>code herer</h1>
-      <ExpenseItem
-        title={DUMMY_EXPENSES[0].title}
-        amount={DUMMY_EXPENSES[0].amount}
-        date={DUMMY_EXPENSES[0].date}
-      ></ExpenseItem>
-      <ExpenseItem
-        title={DUMMY_EXPENSES[1].title}
-        amount={DUMMY_EXPENSES[1].amount}
-        date={DUMMY_EXPENSES[1].date}
-      ></ExpenseItem>
-      <ExpenseItem
-        title={DUMMY_EXPENSES[2].title}
-        amount={DUMMY_EXPENSES[2].amount}
-        date={DUMMY_EXPENSES[2].date}
-      ></ExpenseItem>
-      <ExpenseItem
-        title={DUMMY_EXPENSES[3].title}
-        amount={DUMMY_EXPENSES[3].amount}
-        date={DUMMY_EXPENSES[3].date}
-      ></ExpenseItem>
+      <Expenses items={DUMMY_EXPENSES} />
     </div>
   );
 }
