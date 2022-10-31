@@ -1,0 +1,20 @@
+import React from "react";
+import Chart from "../Chart/Chart";
+const ExpensesChart=()=>{
+    const chartDataPoints= [
+        {label:"jan", value:0},
+        {label:"Fef", value:0},
+        {label:"Mar", value:0},
+        {label:"Apr", value:0},
+        {label:"jun", value:0},
+        {label:"jul", value:0},
+        {label:"Aug", value:0},
+        {label:"Sep", value:0},
+        {label:"Oct", value:0},
+        {label:"Nov", value:0},
+        {label:"Dec", value:0}
+    ]
+return
+}
+
+export default ExpensesChart
